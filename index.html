@@ -245,22 +245,6 @@ hr {
 
 
 
-		@media only screen and (max-width: 767px) and (orientation: landscape) {
-    body {
-        transform: rotate(90deg);
-        transform-origin: left top;
-        width: 100vh;
-        height: 100vw;
-        overflow: hidden;
-    }
-}
-
-
-
-
-
-
-
 
 
 
@@ -547,14 +531,7 @@ hr {
             popup.style.display = "block";
         });
 
-        window.addEventListener("orientationchange", function() {
-            if (window.orientation === 90 || window.orientation === -90) {
-                document.body.style.transform = "rotate(90deg)";
-                document.body.style.width = "100vh";
-                document.body.style.height = "100vw";
-                document.body.style.overflow = "hidden";
-            }
-        });
+
     </script>
 </body>
 </html>
